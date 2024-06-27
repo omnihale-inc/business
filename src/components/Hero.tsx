@@ -20,7 +20,7 @@ const Hero = () => {
         <div>
           <h2 className="text-xs lg:text-base text-center">
             With intuitive interfaces, robust data security, and powerful
-            analytics, our EMR solution empowers medical professionals to focus
+            analytics, our EMS solution empowers medical professionals to focus
             on what truly matters—delivering exceptional patient care.
             Experience the future of healthcare management and improve outcomes
             with our EMS platform.
