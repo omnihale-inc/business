@@ -4,7 +4,7 @@ const PRICING_DATA = [
   {
     name: "Free Plan",
     services:
-      "Suites of services for physicians, clinicians, accounts and frontdesk (receptionist)",
+      "Suites of services for physicians, clinicians, accountants and frontdesk (receptionist)",
     data: "data backup",
     support: "responsive customer support 24/7",
     cost: { price: "N0", limit: "max of 15 users" },
@@ -16,7 +16,7 @@ const PRICING_DATA = [
   {
     name: "Standard Plan",
     services:
-      "Suites of services for physicians, clinicians, accounts and frontdesk (receptionist)",
+      "Suites of services for physicians, clinicians, accountants and frontdesk (receptionist)",
     data: "data backup",
     support: "more responsive customer support 24/7",
     custom: "customization available",
@@ -28,7 +28,7 @@ const PRICING_DATA = [
   {
     name: "Premium Plan",
     services:
-      "Suites of services for physicians, clinicians, accounts and frontdesk (receptionist)",
+      "Suites of services for physicians, clinicians, accountants and frontdesk (receptionist)",
     data: "data backup",
     support: "most responsive customer support 24/7",
     custom: "customization available",
