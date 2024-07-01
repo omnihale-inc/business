@@ -8,6 +8,9 @@ const Footer = () => {
         <Image src="/logo.png" alt="" width={35} height={35} />
         <h3 className="text-lg ml-2">Omnihale</h3>
       </div>
+      <div className="mb-6 lg:mb-0">
+        <p>33 Marina Rd, Lagos Island</p>
+      </div>
       <div>
         Email us at <span className="font-bold"> info@omnihale.com</span> or
         call/whatsapp

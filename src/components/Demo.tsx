@@ -4,7 +4,7 @@ import React from "react";
 const Demo = () => {
   return (
     <section
-      className="w-5/5 max-w-7xl mx-auto mt-32 lg:mt-72 overflow-hidden lg:overflow-visible h-[570px] lg:h-[485px]"
+      className="w-5/5 max-w-7xl mx-auto mt-32 lg:mt-72 overflow-hidden lg:overflow-visible h-[590px] lg:h-[485px]"
       id="demo"
     >
       <div className="flex flex-col lg:flex-row items-center justify-between bg-gradient-to-r from-[#17D694] to-[#04B6A7] rounded-3xl h-[500px] lg:h-[400px] w-4/5 mx-auto lg:w-fit">
@@ -28,7 +28,7 @@ const Demo = () => {
             height={60}
             width={900}
             alt=""
-            className="relative left-16 lg:left-0 top-[-5px] lg:top-[-43px]"
+            className="relative left-16 lg:left-0 top-[-15px] lg:top-[-43px]"
           />
         </div>
       </div>
