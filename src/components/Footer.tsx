@@ -16,6 +16,10 @@ const Footer = () => {
         call/whatsapp
         <span className="font-bold"> 0 703 737 4411</span>
       </div>
+      <div>
+        <a href="/terms">Terms of service</a> |{" "}
+        <a href="/privacy">Privacy Policy</a>
+      </div>
     </footer>
   );
 };
