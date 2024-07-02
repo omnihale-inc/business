@@ -11,12 +11,12 @@ const Footer = () => {
       <div className="mb-6 lg:mb-0">
         <p>33 Marina Rd, Lagos Island</p>
       </div>
-      <div>
+      <div className="mb-6 lg:mb-0">
         Email us at <span className="font-bold"> info@omnihale.com</span> or
         call/whatsapp
         <span className="font-bold"> 0 703 737 4411</span>
       </div>
-      <div className="mb-6 lg:mb-0">
+      <div>
         <a href="/terms">Terms of service</a> |{" "}
         <a href="/privacy">Privacy Policy</a>
       </div>
