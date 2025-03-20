@@ -40,12 +40,20 @@ export async function generateMetadata(
 
 export default function page({ params, searchParams }: Props) {
   return (
-    <main className="flex flex-col justify-between h-screen">
-      <div>
-        <Navigation />
-        <Article />
-      </div>
-      <Footer />
-    </main>
+    <>
+      <head>
+        <meta property="og:image" content="<generated>" />
+        <meta property="og:image:type" content="<generated>" />
+        <meta property="og:image:width" content="<generated>" />
+        <meta property="og:image:height" content="<generated>" />
+      </head>
+      <main className="flex flex-col justify-between h-screen">
+        <div>
+          <Navigation />
+          <Article />
+        </div>
+        <Footer />
+      </main>
+    </>
   );
 }
