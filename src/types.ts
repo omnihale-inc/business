@@ -9,6 +9,7 @@ type ArticleType = {
     description: string;
     keywords: string;
     authors: { name: string }[];
+    image?: string;
   };
 };
 

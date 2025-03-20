@@ -23,6 +23,18 @@ export async function generateMetadata(
     keywords: article[0] ? article[0].metadata.keywords : "",
     description: article[0] ? article[0].metadata.description : "",
     authors: article[0] ? article[0].metadata.authors : [],
+    openGraph: {
+      title: article[0] ? article[0].title : "",
+      description: article[0] ? article[0].metadata.description : "",
+      images: [
+        {
+          url: article[0] ? (article[0].metadata.image as string) : "",
+          width: 800,
+          height: 600,
+          alt: article[0] ? article[0].title : "",
+        },
+      ],
+    },
   };
 }
 
