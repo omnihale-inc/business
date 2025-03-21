@@ -40,18 +40,17 @@ export async function generateMetadata(
       ],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: article[0] ? article[0].title : "",
       description: article[0] ? article[0].metadata.description : "",
-      images: [
-        {
-          url: article[0]
-            ? `https://omniaxus.com/_next/image?url=%2Farticles%2F${
-                (article[0].image as string).split("/")[2]
-              }&w=1920&q=75`
-            : "",
-        },
-      ], // Twitter card image
+      images: {
+        url: article[0]
+          ? `https://omniaxus.com/_next/image?url=%2Farticles%2F${
+              (article[0].image as string).split("/")[2]
+            }&w=1920&q=75`
+          : "",
+        alt: article[0] ? article[0].title : "",
+      },
     },
   };
 }
