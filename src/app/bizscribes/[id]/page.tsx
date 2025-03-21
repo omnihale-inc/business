@@ -29,9 +29,9 @@ export async function generateMetadata(
       images: [
         {
           url: article[0]
-            ? `"image": "https://omniaxus.com/_next/image?url=%2Farticles%2F${
+            ? `https://omniaxus.com/_next/image?url=%2Farticles%2F${
                 (article[0].image as string).split("/")[2]
-              }&w=1920&q=75"`
+              }&w=1920&q=75`
             : "",
           width: 800,
           height: 600,
@@ -43,9 +43,9 @@ export async function generateMetadata(
       images: [
         {
           url: article[0]
-            ? `"image": "https://omniaxus.com/_next/image?url=%2Farticles%2F${
+            ? `https://omniaxus.com/_next/image?url=%2Farticles%2F${
                 (article[0].image as string).split("/")[2]
-              }&w=1920&q=75"`
+              }&w=1920&q=75`
             : "",
           width: 800,
           height: 600,
