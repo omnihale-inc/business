@@ -40,6 +40,9 @@ export async function generateMetadata(
       ],
     },
     twitter: {
+      card: "summary",
+      title: article[0] ? article[0].title : "",
+      description: article[0] ? article[0].metadata.description : "",
       images: [
         {
           url: article[0]
@@ -47,9 +50,6 @@ export async function generateMetadata(
                 (article[0].image as string).split("/")[2]
               }&w=1920&q=75`
             : "",
-          width: 800,
-          height: 600,
-          alt: article[0] ? article[0].title : "",
         },
       ], // Twitter card image
     },
