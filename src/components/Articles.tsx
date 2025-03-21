@@ -76,7 +76,7 @@ const Articles: React.FC = () => {
       <button className="text-blue-700 text-sm my-4 text-center">
         We post daily on here.
       </button>
-      <h2 className="mt-10 lg:mt-36 mb-6 lg:mb-6 text-sm lg:text-2xl text-center lg:text-left font-semibold">
+      <h2 className="mt-10 mb-6 lg:mb-6 text-sm lg:text-2xl text-center lg:text-left font-semibold">
         Articles
       </h2>
       <div className="flex flex-wrap gap-8 justify-center lg:justify-start">

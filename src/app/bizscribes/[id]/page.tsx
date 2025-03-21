@@ -28,32 +28,42 @@ export async function generateMetadata(
       description: article[0] ? article[0].metadata.description : "",
       images: [
         {
-          url: article[0] ? (article[0].metadata.image as string) : "",
+          url: article[0]
+            ? `"image": "https://omniaxus.com/_next/image?url=%2Farticles%2F${
+                (article[0].image as string).split("/")[2]
+              }&w=1920&q=75"`
+            : "",
           width: 800,
           height: 600,
           alt: article[0] ? article[0].title : "",
         },
       ],
     },
+    twitter: {
+      images: [
+        {
+          url: article[0]
+            ? `"image": "https://omniaxus.com/_next/image?url=%2Farticles%2F${
+                (article[0].image as string).split("/")[2]
+              }&w=1920&q=75"`
+            : "",
+          width: 800,
+          height: 600,
+          alt: article[0] ? article[0].title : "",
+        },
+      ], // Twitter card image
+    },
   };
 }
 
 export default function page({ params, searchParams }: Props) {
   return (
-    <>
-      <head>
-        <meta property="og:image" content="<generated>" />
-        <meta property="og:image:type" content="<generated>" />
-        <meta property="og:image:width" content="<generated>" />
-        <meta property="og:image:height" content="<generated>" />
-      </head>
-      <main className="flex flex-col justify-between h-screen">
-        <div>
-          <Navigation />
-          <Article />
-        </div>
-        <Footer />
-      </main>
-    </>
+    <main className="flex flex-col justify-between h-screen">
+      <div>
+        <Navigation />
+        <Article />
+      </div>
+      <Footer />
+    </main>
   );
 }

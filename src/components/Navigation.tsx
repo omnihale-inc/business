@@ -31,19 +31,17 @@ const Navigation: React.FC = () => {
         >
           <Link href="/">Omniaxus</Link>
         </h2>
-        {pathNameLength < 3 && (
-          <nav className="flex justify-between mt-7 lg:mt-0">
-            {NAV_LINKS.map((link, index) => (
-              <Link
-                href={setHref(link)}
-                key={index}
-                className={setStyleForActiveLink(link)}
-              >
-                {link}
-              </Link>
-            ))}
-          </nav>
-        )}
+        <nav className="flex justify-between mt-7 lg:mt-0">
+          {NAV_LINKS.map((link, index) => (
+            <Link
+              href={setHref(link)}
+              key={index}
+              className={setStyleForActiveLink(link)}
+            >
+              {link}
+            </Link>
+          ))}
+        </nav>
       </section>
     </header>
   );
